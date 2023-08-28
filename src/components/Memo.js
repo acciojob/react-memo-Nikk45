@@ -35,7 +35,7 @@ function Memo() {
   }, [todos]);
 
   return (
-    <div className="memo">
+    <div className="main">
       <div className='use-memo'>
         <h1>React.useMemo</h1>
         <h1>My todos</h1>
@@ -45,10 +45,10 @@ function Memo() {
           <p key={index}>{todo}</p>
         ))}
       </div>
-        <button onClick={handleAddTodo}>Add Todo</button>
+        <button id='add-todo-btn' onClick={handleAddTodo}>Add Todo</button>
       </div>
       <hr/>
-      <p>Count:{count} <button onClick={handleIncrement}>+</button></p>
+      <p>Count:{count} <button id='incr-cnt' onClick={handleIncrement}>+</button></p>
       <h1>Expensive Calculation</h1>
       <p>{amount}</p>
       <hr/>
@@ -57,6 +57,7 @@ function Memo() {
         <h1>React.memo</h1>
         <input
           type="text"
+          id='skill-input'
           value={inputText}
           onChange={handleInputChange}
           placeholder="add skill"
