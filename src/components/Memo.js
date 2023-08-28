@@ -63,7 +63,7 @@ function Memo() {
           placeholder="add skill"
           className={isTextValid ? '' : 'invalid'}
         />
-        <button onClick={handleSubmit}>
+        <button id='skill-btn' onClick={handleSubmit}>
           Add Skill
         </button>
       </div>
