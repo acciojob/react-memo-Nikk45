@@ -48,7 +48,7 @@ function Memo() {
         <button id='add-todo-btn' onClick={handleAddTodo}>Add Todo</button>
       </div>
       <hr/>
-      <p>Count:{count} <button id='incr-cnt' onClick={handleIncrement}>+</button></p>
+      <p>Count:{count} <button id='incr-cnt' onClick={handleIncrement}>{count}</button></p>
       <h1>Expensive Calculation</h1>
       <p>{amount}</p>
       <hr/>
@@ -70,7 +70,7 @@ function Memo() {
 
       <ul className="memo-list">
         {skills.map((skill, index) => (
-          <li key={index}>{skill}</li>
+          <li id='item-jumbotron' key={index}>{skill}</li>
         ))}
       </ul>
     </div>
