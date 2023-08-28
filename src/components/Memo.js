@@ -5,6 +5,7 @@ function Memo() {
   const [count, setCount] = useState(0);
   const [inputText, setInputText] = useState('');
   const [isTextValid, setIsTextValid] = useState(true);
+  
     const [skills, setSkills] = useState([]);
 
   const handleAddTodo = () => {
@@ -48,7 +49,7 @@ function Memo() {
       <hr/>
       <p id='incr-cnt'>Count:{count} </p><button id='incr-btn' onClick={handleIncrement}>{count}</button>
       <h1>Expensive Calculation</h1>
-      <p id='calc'>1000000000</p>
+      <p id='calc'>{count === 0? '1000000000' : `${1000000000+count}`}</p>
       <hr/>
       <hr/>
       <div className="memo-input">
