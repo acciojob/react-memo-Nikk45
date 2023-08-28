@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 
 function Memo() {
   const [todos, setTodos] = useState([]);
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
   const [inputText, setInputText] = useState('');
   const [isTextValid, setIsTextValid] = useState(true);
   const [amount, setAmount] = useState(1);
     const [skills, setSkills] = useState([]);
 
   const handleAddTodo = () => {
-    setTodos([...todos, 'New todo']);
+    setTodos([...todos, 'New Todo']);
   };
 
   const handleIncrement = () => {
