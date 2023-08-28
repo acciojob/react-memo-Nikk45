@@ -35,14 +35,14 @@ function Memo() {
   }, [todos]);
 
   return (
-    <div className="main">
+    <div id="main">
       <div className='use-memo'>
         <h1>React.useMemo</h1>
         <h1>My todos</h1>
         <div className="memo-list">
         <p>New todos</p>
         {todos.map((todo, index) => (
-          <p key={index}>{todo}</p>
+          <p id={`todo-${index}`} key={index}>{todo}</p>
         ))}
       </div>
         <button id='add-todo-btn' onClick={handleAddTodo}>Add Todo</button>
