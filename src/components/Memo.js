@@ -46,7 +46,7 @@ function Memo() {
         <button id='add-todo-btn' onClick={handleAddTodo}>Add Todo</button>
       </div>
       <hr/>
-      <p>Count:{count} <button id='incr-cnt' onClick={handleIncrement}>{count}</button></p>
+      <p id='incr-cnt'>Count:{count} </p><button id='incr-btn' onClick={handleIncrement}>{count}</button>
       <h1>Expensive Calculation</h1>
       <p id='calc'>1000000000</p>
       <hr/>
