@@ -50,7 +50,7 @@ function Memo() {
       <hr/>
       <p>Count:{count} <button id='incr-cnt' onClick={handleIncrement}>{count}</button></p>
       <h1>Expensive Calculation</h1>
-      <p>{amount}</p>
+      <p id='calc'>{amount}</p>
       <hr/>
       <hr/>
       <div className="memo-input">
